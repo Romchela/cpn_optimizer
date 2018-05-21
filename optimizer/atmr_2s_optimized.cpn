@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><workspaceElements>
+  <generator format="6" tool="CPN Tools" version="4.0.1"/>
+  <cpnet>
+    <globbox>
+      <block id="ID389">
+        <id>MSC Declarations</id>
+        <color id="ID390">
+          <id>BOOL</id>
+          <bool/>
+          <layout>colset BOOL = bool;</layout>
+        </color>
+        <color id="ID391">
+          <id>INT</id>
+          <int/>
+          <layout>colset INT = int;</layout>
+        </color>
+        <color id="ID393">
+          <id>pINTINT</id>
+          <timed/>
+          <product>
+            <id>INT</id>
+            <id>INT</id>
+          </product>
+          <layout>colset pINTINT = product INT * INT timed;</layout>
+        </color>
+        <color id="ID394">
+          <id>pINTINTList</id>
+          <timed/>
+          <list>
+            <id>pINTINT</id>
+          </list>
+          <layout>colset pINTINTList = list pINTINT timed;</layout>
+        </color>
+        <color id="ID395">
+          <id>pINT</id>
+          <timed/>
+          <int/>
+          <layout>colset pINT = INT timed;</layout>
+        </color>
+        <color id="ID396">
+          <id>pINTList</id>
+          <timed/>
+          <list>
+            <id>pINT</id>
+          </list>
+          <layout>colset pINTList = list pINT timed;</layout>
+        </color>
+        <color id="ID398">
+          <id>UNIT</id>
+          <timed/>
+          <unit/>
+          <layout>colset UNIT = unit timed;</layout>
+        </color>
+      </block>
+      <block id="ID406">
+        <id>Variables</id>
+        <var id="ID407">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>nextFr</id>
+          <layout>var nextFr : INT;</layout>
+        </var>
+        <var id="ID408">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>expcFr</id>
+          <layout>var expcFr : INT;</layout>
+        </var>
+        <var id="ID409">
+          <type>
+            <id>BOOL</id>
+          </type>
+          <id>HasDataToSend</id>
+          <layout>var HasDataToSend : BOOL;</layout>
+        </var>
+        <var id="ID410">
+          <type>
+            <id>pINT</id>
+          </type>
+          <id>pINT_var</id>
+          <layout>var pINT_var : pINT;</layout>
+        </var>
+        <var id="ID411">
+          <type>
+            <id>pINTINTList</id>
+          </type>
+          <id>pINTINTList_var</id>
+          <layout>var pINTINTList_var : pINTINTList;</layout>
+        </var>
+        <var id="ID412">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>ack</id>
+          <layout>var ack : INT;</layout>
+        </var>
+        <var id="ID413">
+          <type>
+            <id>BOOL</id>
+          </type>
+          <id>sTimedNetwork</id>
+          <layout>var sTimedNetwork : BOOL;</layout>
+        </var>
+        <var id="ID414">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>resData</id>
+          <layout>var resData : INT;</layout>
+        </var>
+        <var id="ID415">
+          <type>
+            <id>pINTINT</id>
+          </type>
+          <id>pINTINT_var</id>
+          <layout>var pINTINT_var : pINTINT;</layout>
+        </var>
+        <var id="ID416">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>rLimit</id>
+          <layout>var rLimit : INT;</layout>
+        </var>
+        <var id="ID417">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>sbuffer</id>
+          <layout>var sbuffer : INT;</layout>
+        </var>
+        <var id="ID418">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>inFr</id>
+          <layout>var inFr : INT;</layout>
+        </var>
+        <var id="ID419">
+          <type>
+            <id>BOOL</id>
+          </type>
+          <id>rTimedNetwork</id>
+          <layout>var rTimedNetwork : BOOL;</layout>
+        </var>
+        <var id="ID420">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>rbuffer</id>
+          <layout>var rbuffer : INT;</layout>
+        </var>
+        <var id="ID421">
+          <type>
+            <id>pINTList</id>
+          </type>
+          <id>pINTList_var</id>
+          <layout>var pINTList_var : pINTList;</layout>
+        </var>
+        <var id="ID422">
+          <type>
+            <id>INT</id>
+          </type>
+          <id>sLimit</id>
+          <layout>var sLimit : INT;</layout>
+        </var>
+      </block>
+    </globbox>
+    <page id="ID323">
+      <pageattr name="ParTimedGeneralV2"/>
+      <place id="ID324">
+        <posattr x="-378.000000" y="504.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p324</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID619">
+          <posattr x="-351.000000" y="485.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191488">
+          <posattr x="-334.000000" y="522.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID327">
+        <posattr x="-210.000000" y="504.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p327</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID620">
+          <posattr x="-183.000000" y="485.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191489">
+          <posattr x="-166.000000" y="522.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID330">
+        <posattr x="-294.000000" y="588.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">start_330</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID621">
+          <posattr x="-267.000000" y="569.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID622">
+          <posattr x="-278.000000" y="569.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">1`()</text>
+        </initmark>
+      </place>
+      <place id="ID332">
+        <posattr x="-378.000000" y="462.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p332</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID623">
+          <posattr x="-351.000000" y="443.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191490">
+          <posattr x="-334.000000" y="480.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID335">
+        <posattr x="-210.000000" y="462.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p335</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID624">
+          <posattr x="-183.000000" y="443.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191491">
+          <posattr x="-166.000000" y="480.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID338">
+        <posattr x="-380.000000" y="420.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p338</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID625">
+          <posattr x="-353.000000" y="401.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191492">
+          <posattr x="-336.000000" y="438.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID341">
+        <posattr x="-210.000000" y="420.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">p341</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID626">
+          <posattr x="-183.000000" y="401.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191493">
+          <posattr x="-166.000000" y="438.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID353">
+        <posattr x="-294.000000" y="126.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">P_END</text>
+        <ellipse h="25.000000" w="53.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID628">
+          <posattr x="-257.000000" y="107.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191495">
+          <posattr x="-240.000000" y="144.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID381">
+        <posattr x="-504.000000" y="378.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">cin381</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID634">
+          <posattr x="-477.000000" y="359.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191499">
+          <posattr x="-460.000000" y="396.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1"/>
+        </initmark>
+      </place>
+      <place id="ID383">
+        <posattr x="-420.000000" y="294.000000"/>
+        <fillattr colour="White" filled="false" pattern="Solid"/>
+        <lineattr colour="Black" thick="0" type="Solid"/>
+        <textattr bold="false" colour="Black"/>
+        <text tool="CPN Tools">cout383</text>
+        <ellipse h="25.000000" w="25.000000"/>
+        <token x="0.000000" y="0.000000"/>
+        <marking hidden="false" x="0.000000" y="0.000000">
+          <snap anchor.horizontal="0" anchor.vertical="0" snap_id="0"/>
+        </marking>
+        <type id="ID635">
+          <posattr x="-393.000000" y="275.000000"/>
+          <fillattr colour="White" filled="false" pattern="Solid"/>
+          <lineattr colour="Black" thick="0" type="Solid"/>
+          <textattr bold="false" colour="Black"/>
+          <text tool="CPN Tools" version="4.0.1">UNIT</text>
+        </type>
+        <initmark id="ID1824191500">
